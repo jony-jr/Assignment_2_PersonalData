@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data</title>
+  </head>
+  <!-- its not recommended using 'style' in HTML  -->
+  <body>
+    <form>
+      <fieldset style="background-color: #a12b2d">
+        <!-- tag is used to group related elements in a form, draws a box around the related elements-->
+        <legend style="background-color: #507ea9">Personal Data</legend>
+        <!--  outer field title-->
+        <br /><br />
+        <fieldset style="background-color: #d9a51e">
+          <!--iner field set-->
+          <legend
+            style="
+              background-color: #6496eb;
+              height: 70px;
+              align-content: center;
+            "
+          >
+            YourName
+            <!-- inner field title-->
+          </legend>
+          <table>
+            <tr>
+              <td><label for="fname">First Name</label></td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="ex:Ahmed"
+                  name="Fname"
+                  id="fname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="sname">Second Name</label></td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="ex:Wael"
+                  name="Sname"
+                  id="sname"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <br />
+        <table>
+          <tr>
+            <td><label for="phone">your phone</label></td>
+            <td>:</td>
+            <td><input type="text" name="Phone" id="phone" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>:</td>
+            <td><input type="email" name="Email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password</label></td>
+            <td>:</td>
+            <td><input type="password" name="Pass" id="pass" /></td>
+          </tr>
+          <tr>
+            <td><label for="repass">Re-password</label></td>
+            <td>:</td>
+            <td><input type="password" name="Re-pass" id="repass" /></td>
+          </tr>
+        </table>
+        <br /><br /><br />
+        <div>
+          <div>
+            <input name="gender" type="radio" id="male" value="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input name="gender" type="radio" id="female" value="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <br /><br />
+        <div>
+          <div>
+            <input type="checkbox" name="stat" id="std" value="student" />
+            <label for="std">Student</label>
+          </div>
+          <div>
+            <input type="checkbox" name="stat" id="grad" value="graduated" />
+            <label for="grad">Graduated</label>
+          </div>
+        </div>
+        <br /><br />
+        <select name="Specialization">
+          <optgroup label="Front-end">
+            <option>html</option>
+            <option>css</option>
+            <option>js</option>
+          </optgroup>
+          <optgroup label="Back-end">
+            <option>java</option>
+            <option>php</option>
+          </optgroup>
+          <optgroup label="UX&UI">
+            <option>Figma</option>
+          </optgroup>
+        </select>
+        <br />
+        <input
+          width="70"
+          type="image"
+          src="submit.png"
+          alt=" black submit button"
+        /><br />
+        <!-- submit button -->
+        <br /><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
